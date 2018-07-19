@@ -53,10 +53,9 @@ public class SoundCloudLookupService {
 		String url = "http://api.soundcloud.com/tracks/?limit=" + LIMIT + "&q=" + query + "&client_id=pCNN85KHlpoe5K6ZlysWZBEgLJRcftOd";
 
 		//Create timestamp
-	    long yourmilliseconds = System.currentTimeMillis();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");    
-        Date currentDateTime = new Date(yourmilliseconds);
-		
+	    	long yourmilliseconds = System.currentTimeMillis();
+        	SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");    
+        	Date currentDateTime = new Date(yourmilliseconds);
 		logger.info(currentDateTime + " Performing query: " + url);
 		
 
@@ -73,6 +72,11 @@ public class SoundCloudLookupService {
 		Random random = new Random();
 		long milisecondsRandomNum = random.nextInt((5000 - 1000) + 1) + 1000;
 		Thread.sleep(milisecondsRandomNum);
+		
+		//Create timestamp
+	    	yourmilliseconds = System.currentTimeMillis();    
+        	currentDateTime = new Date(yourmilliseconds);
+		logger.info(currentDateTime + " Performed query: " + url);
 		
 		return CompletableFuture.completedFuture(soundCloudTracklist);
 	}
