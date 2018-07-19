@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: soundCloud-exerise
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: SHAHARZ
+Implementation-Vendor-Id: com.dawn
+Build-Jdk: 1.8.0_101
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/soundCloud-exerise
+Created-By: Maven Integration for Eclipse
+
